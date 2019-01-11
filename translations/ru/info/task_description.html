@@ -1,0 +1,36 @@
+<!-- Describe task in general -->
+
+<p>
+    Ваша задача поменять местами парные элементы списка ({% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}). Если вам дам список из 4х элементов, то ваша функция должна вернуть такой же список, только в нем поменялись местами первый со вторым элемены и третий с четвертым.
+</p>
+
+<p>
+    Если элементов не парное количество, то последний, не парный, элемент оставить на своем месте. Пустой список должен остаться пустым.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}.
+</p>
+
+<p>
+    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">swapNodes([1, 2, 3, 4]) == [2, 1, 4, 3]
+swapNodes([5, 5, 5, 5]) == [5, 5, 5, 5]
+</pre>
+{% else %}
+<pre class="brush: python">swap_nodes([1, 2, 3, 4]) == [2, 1, 4, 3]
+swap_nodes([5, 5, 5, 5]) == [5, 5, 5, 5]
+</pre>
+{% endif %}
+</div>

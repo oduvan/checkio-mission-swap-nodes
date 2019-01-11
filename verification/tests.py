@@ -29,6 +29,10 @@ TESTS = {
         {
             "input": [['hello', 'world']],
             "answer": ['world', 'hello']
+        },
+        {
+            "input": [[]],
+            "answer": []
         }
     ],
     "Extra": [
