@@ -1,19 +1,23 @@
 "use strict";
 
-function sumTwo(a, b) {
-    // sums two passed arguments
+function swapNodes(a) {
 
     // your code here
-    return 0;
+    return undefined;
 }
 
 var assert = require('assert');
 if (!global.is_checking) {
     console.log('Example:');
-    console.log(sumTwo(3, 2));
+    console.log(swapNodes([1, 2, 3, 4]));
 
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(sumTwo(3, 2), 5);
-    assert.equal(sumTwo(5, 7), 12);
+    assert.deepEqual(swapNodes([1, 2, 3, 4]), [2, 1, 4, 3]);
+    assert.deepEqual(swapNodes([5, 5, 5, 5]), [5, 5, 5, 5]);
+    assert.deepEqual(swapNodes([1, 2, 3]), [2, 1, 3]);
+    assert.deepEqual(swapNodes([3]), [3]);
+    assert.deepEqual(swapNodes(["hello", "world"]), ["world", "hello"]);
+
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
+    
