@@ -1,20 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
+    Your task is to swap elements of the list ({% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}) pairwise. If you are given a list of 4 elements, then your function should return the same list, only in it the first and second elements are interchanged, as well as the third and fourth.
 </p>
 
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+<p>
+    If there isn’t a paired amount of elements, then leave the last unpaired element in its place. An empty list should remain empty.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}Array{% else %}Iterable{% endif %}.
 </p>
 
 
@@ -34,16 +34,5 @@ swap_nodes([5, 5, 5, 5]) == [5, 5, 5, 5]
 </pre>
 {% endif %}
 </div>
-<!-- Here you can explain how it can be used in development and what is usage of this. -->
-<!-- The section is optional -->
-<p class="for_info_only">
-    <strong>How it is used: </strong>
-    <i>(math is used everywhere)</i>
-</p>
 
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
-<p>
-    <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
-</p>
+
